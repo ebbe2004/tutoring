@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ti">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ትምህርቲ ህጻናት - Tigrinya Tutoring for Children</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ትምህርቲ ህጻናት</h1>
+    <p>ንህጻናት ትግርኛ ትምህርቲ ፣ ተስፋ ናይ መጻኢ!</p>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>እንቋዕ ብደሓን መጻኢኩም!</h2>
+      <p>
+        ነዚ መርበብ ገጽ ንህጻናት ትግርኛ ንምምሃር እዩ። ብምስል፣ ቪዲዮን ንምምሃር ምርካብ ትኽእሉ ትግበሩ።
+      </p>
+    </section>
+    <section class="media-gallery">
+      <h2>ቪዲዮን ምስልታትን</h2>
+      <div class="media">
+        <video controls poster="images/image1.jpg">
+          <source src="https://31oasbld6n.ufs.sh/f/HpfXDtrVqAvbgFuQhLP5oBZ8y73YhHMwUf0PCtj9XK2QIlOL" type="video/mp4">
+          ቪዲዮ ኣይከኣልኩምን።
+        </video>
+        <img src="https://31oasbld6n.ufs.sh/f/HpfXDtrVqAvbwDVX7dE0OoLZ6Ppu71qlJ8mbMFUVaThnGexf" alt="ምስል 1" />
+        <img src="https://31oasbld6n.ufs.sh/f/HpfXDtrVqAvbexlnLPCu92qmxKEdb6l8oPAUHrCX7tavLY0k" alt="ምስል 2" />
+      </div>
+    </section>
+    <section class="cta">
+      <h2>ተማሃሩ ኣብ ዝተረኸበ መደብ</h2>
+      <p>
+        ስለ ትግርኛ ቃላት፣ ቁምነገራትን ኣብዚ ትምህርቲ ምስ ኣካብዱ።
+      </p>
+      <a href="#contact" class="button">ምምዝጋብ</a>
+    </section>
+    <section id="contact">
+      <h2>ኣኽባር ስደት</h2>
+      <form>
+        <label for="name">ሽም:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">ኢሜይል:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">መልእኽቲ:</label>
+        <textarea id="message" name="message" rows="3" required></textarea>
+        <button type="submit">ምስደብ</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 ትምህርቲ ህጻናት. መብቲ የቐንየለይ።</p>
+    <p>
+      <a href="#privacy-policy" id="privacy-link">Privacy Policy</a>
+    </p>
+  </footer>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacy-policy" class="privacy-modal" style="display:none;">
+    <div class="privacy-content">
+      <span class="close" id="close-privacy">&times;</span>
+      <h2>Privacy Policy</h2>
+      <p>
+        Your privacy is important to us. We do not collect personal information from children or users of this website except what is submitted in the contact form for communication purposes only. We do not share your information with third parties. If you have any questions, please contact us.
+      </p>
+    </div>
+  </div>
+  <script>
+    // Simple modal logic for privacy policy
+    document.getElementById('privacy-link').onclick = function(e) {
+      e.preventDefault();
+      document.getElementById('privacy-policy').style.display = 'block';
+    };
+    document.getElementById('close-privacy').onclick = function() {
+      document.getElementById('privacy-policy').style.display = 'none';
+    };
+    window.onclick = function(event) {
+      var modal = document.getElementById('privacy-policy');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    };
+  </script>
+</body>
+</html>
